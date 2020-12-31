@@ -1,0 +1,141 @@
+% Document class : AMS Journal
+\documentclass{jams-l}
+
+% Package
+\usepackage{mathpazo}
+\usepackage{euler}
+\usepackage{tikz-cd}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% Theorem & Style
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\theoremstyle{corollary}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{claim}
+\newtheorem{claim}[theorem]{Claim}
+
+%    Exercise & Solution 
+\newtheorem*{xca*}{Exercise}
+\newenvironment{solution}
+{\begin{proof}[Solution]}
+{\end{proof}}
+\newenvironment{exercise}[1]
+{\begin{xca*}[$\mathbf{#1}$] %\phantom{a}
+}
+{\end{xca*}}
+
+
+\numberwithin{equation}{section}
+
+%    Math Notation
+\newcommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\Ar}{\mathsf{Ar}}
+\newcommand{\Ab}{\mathsf{Ab}}
+\newcommand{\Set}{\mathsf{Set}}
+\newcommand{\Hom}{\mathsf{Hom}}
+\newcommand{\Mor}{{Mor}}
+\newcommand{\Top}{\mathfrak{Top}}
+\newcommand{\Rmod}{R\text{-}\mathsf{mod}}
+\newcommand{\modR}{\mathsf{mod}\text{-}R}
+\newcommand{\Spec}{\mathrm{Spec}}
+
+\DeclareMathOperator{\Psh}{Psh}
+\DeclareMathOperator{\Sh}{Sh}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\op}{op}
+\DeclareMathOperator{\id}{\mathsf{id}}
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\PrDiv}{PrDiv}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\Pic}{Pic}
+
+%    Blank box placeholder for figures (to avoid requiring any
+%    particular graphics capabilities for printing this document).
+\newcommand{\blankbox}[2]{%
+  \parbox{\columnwidth}{\centering
+%    Set fboxsep to 0 so that the actual size of the box will match the
+%    given measurements more closely.
+    \setlength{\fboxsep}{0pt}%
+    \fbox{\raisebox{0pt}[#2]{\hspace{#1}}}%
+  }%
+}
+
+\begin{document}
+
+\title{THE RISING SEA : Foundations of Algebraic Geometry}
+
+%    Information for the first author
+\author{Sang min Ko}
+\address{Department of Mathematics, Columbia University}
+\email{smko77@math.columbia.edu}
+
+%    Information for the second author
+%\author{Person1}
+%\address{Abcd University}
+%\email{abcd@mail.com}
+
+\dedicatory{This is the solution of the problem sets in FOAG}
+
+\maketitle
+
+% When you use multiple equations at the same time, I strongly recommend to use 
+% \begin{equation*}
+% \begin{aligned}
+% asdf & = adf \\
+% adf  & = asdf 
+% \end{aligned}
+% \end{equation*}
+
+\section{Dimension and codimension}
+\begin{exercise}{11.1.A} 
+\end{exercise}
+\begin{solution}
+It follows from the correspondence between
+\[ \{ \text{prime ideals of }A \} \Longleftrightarrow \{ \text{irreducible closed susbet of } \Spec A\} \] 
+\end{solution}
+
+\begin{exercise}{11.1.B}
+\end{exercise}
+\begin{solution}
+It follows from the bijection
+\end{solution}
+
+
+\section{Dimension, transcendence degree and Noether normalization}
+\begin{exercise}{11.2.A}
+\end{exercise}
+\begin{solution}
+Refer to Milne's note
+\end{solution}
+
+
+
+\section{Codimension one miracle}
+\begin{exercise}{11.3.A}
+
+\end{exercise}
+
+
+
+
+\bibliographystyle{amsplain}
+\begin{thebibliography}{10}
+
+\bibitem {FOAG} R. Vakil, \textit{The Rising Sea : Foundation of Algebraic Geometry}, math216.wordpress.com, 2017.
+
+\end{thebibliography}
+
+\end{document}
+
+%------------------------------------------------------------------------------
+% End of jams_sample.tex
+%------------------------------------------------------------------------------
